@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, [Friend's Name]!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Birthday, Phuddu Bhai!</h1>
+            <p>Welcome to this little chutiyapa!</p>
+        </header>
+
+        <!-- Terminal-like interactive greeting -->
+        <div class="terminal">
+            <p id="terminal-text"></p>
+        </div>
+
+        <div class="features">
+
+            <button onclick="showBirthdayMessage()">Show Message</button>
+            <button onclick="triggerConfetti()">Click pljjj!</button>
+            
+            <div id="birthday-message" class="hidden">
+                <p></p>
+            </div>
+
+            <!-- Easter Egg section -->
+            <div class="easter-egg">
+                <h3>Find the Secret Command</h3>
+                <input type="text" id="easter-egg-input" placeholder="Type the secret code">
+                <button onclick="revealEasterEgg()">Submit</button>
+                <div id="easter-egg-message" class="hidden">
+                    <p>Surprise! You've unlocked a hidden gift! 🎁</p>
+                </div>
+            </div>
+
+            <!-- Image Wall with Images -->
+            <div class="image-wall">
+                <h3>Our Coding Memories</h3>
+                <div class="image-gallery">
+                    <img src="1.jpeg" alt="Memory 2" onclick="showImageDetails('Memory 1: Awaaragardi with lala')">
+                    <img src="2.jpeg" alt="Memory 1" onclick="showImageDetails('Memory 2: Azhar Sahab ke pese uraty huy')">
+                    <img src="3.jpeg" alt="Memory 3" onclick="showImageDetails('Memory 3: Our First Photo Session i Guess')">
+                </div>
+                <p id="image-detail" class="hidden"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Created with love by your best friend! 🎉</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+</body>
+</html>

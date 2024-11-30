@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+/* Terminal Style */
+.terminal {
+    background-color: #1e1e1e;
+    color: #00ff00;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.3);
+    min-height: 100px;
+    position: relative;
+}
+
+.terminal p {
+    margin: 0;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    background-color: #e68a00;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden elements (displayed with JS) */
+.hidden {
+    display: none;
+}
+
+/* Easter Egg Input */
+.easter-egg {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+#easter-egg-input {
+    padding: 10px;
+    font-size: 1.1em;
+    width: 300px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+#easter-egg-input:focus {
+    outline: none;
+    border: 2px solid #ffcc00;
+}
+
+/* Image Wall */
+.image-wall {
+    margin-top: 40px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Image Detail */
+#image-detail {
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Transitions and Hover Effects */
+button, .image-gallery img, input[type="number"], input[type="text"], #easter-egg-input {
+    transition: all 0.3s ease;
+}
+
+footer {
+    font-size: 1.1em;
+    color: #888;
+    font-family: 'Roboto', sans-serif;
+}
+
+code {
+    background-color: #222;
+    padding: 5px;
+    border-radius: 5px;
+    color: #00ff00;
+}
